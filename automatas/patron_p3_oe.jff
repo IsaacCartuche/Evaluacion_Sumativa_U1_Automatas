@@ -28,7 +28,7 @@
 		<transition><from>0</from><to>0</to><read>L</read></transition>
 		<!-- Transiciones Detección P3 (O -> E) -->
 		<transition><from>0</from><to>1</to><read>O</read></transition>
-		<transition><from>1</from><to>2</to><read>E</read></transition>
+		<transition><from>1</from><to>2</to><read>F</read></transition>
 		<!-- Transiciones Bucles en q2 (Aceptación) -->
 		<transition><from>2</from><to>2</to><read>R</read></transition>
 		<transition><from>2</from><to>2</to><read>C</read></transition>
