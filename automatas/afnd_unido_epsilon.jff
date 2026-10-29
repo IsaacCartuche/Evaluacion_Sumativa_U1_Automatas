@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Creado para JFLAP 7.1 - AFND Unido con Transiciones Epsilon -->
+<structure>
+	<type>fa</type>
+	<automaton>
+		<!-- Estado Inicial Global -->
+		<state id="0" name="q0">
+			<x>80.0</x>
+			<y>250.0</y>
+			<initial/>
+		</state>
+
+		<!-- Sub-autómata P1 (q1 a q4) -->
+		<state id="1" name="q1"><x>220.0</x><y>100.0</y></state>
+		<state id="2" name="q2"><x>360.0</x><y>100.0</y></state>
+		<state id="3" name="q3"><x>500.0</x><y>100.0</y></state>
+		<state id="4" name="q4"><x>640.0</x><y>100.0</y><final/></state>
+
+		<!-- Sub-autómata P2 (q5 a q7) -->
+		<state id="5" name="q5"><x>220.0</x><y>250.0</y></state>
+		<state id="6" name="q6"><x>360.0</x><y>200.0</y></state>
+		<state id="7" name="q7"><x>360.0</x><y>300.0</y><final/></state>
+
+		<!-- Sub-autómata P3 (q8 a q10) -->
+		<state id="8" name="q8"><x>220.0</x><y>400.0</y></state>
+		<state id="9" name="q9"><x>360.0</x><y>400.0</y></state>
+		<state id="10" name="q10"><x>500.0</x><y>400.0</y><final/></state>
+
+		<!-- Transiciones Epsilon desde q0 -->
+		<transition><from>0</from><to>1</to><read/></transition>
+		<transition><from>0</from><to>5</to><read/></transition>
+		<transition><from>0</from><to>8</to><read/></transition>
+
+		<!-- Transiciones Rama P1 -->
+		<transition><from>1</from><to>1</to><read>R</read></transition>
+		<transition><from>1</from><to>1</to><read>C</read></transition>
+		<transition><from>1</from><to>1</to><read>I</read></transition>
+		<transition><from>1</from><to>1</to><read>A</read></transition>
+		<transition><from>1</from><to>1</to><read>E</read></transition>
+		<transition><from>1</from><to>1</to><read>O</read></transition>
+		<transition><from>1</from><to>1</to><read>L</read></transition>
+		<transition><from>1</from><to>2</to><read>I</read></transition>
+		<transition><from>2</from><to>3</to><read>I</read></transition>
+		<transition><from>3</from><to>4</to><read>I</read></transition>
+		<transition><from>4</from><to>4</to><read>R</read></transition>
+		<transition><from>4</from><to>4</to><read>C</read></transition>
+		<transition><from>4</from><to>4</to><read>I</read></transition>
+		<transition><from>4</from><to>4</to><read>A</read></transition>
+		<transition><from>4</from><to>4</to><read>E</read></transition>
+		<transition><from>4</from><to>4</to><read>O</read></transition>
+		<transition><from>4</from><to>4</to><read>L</read></transition>
+
+		<!-- Transiciones Rama P2 -->
+		<transition><from>5</from><to>5</to><read>C</read></transition>
+		<transition><from>5</from><to>5</to><read>I</read></transition>
+		<transition><from>5</from><to>5</to><read>A</read></transition>
+		<transition><from>5</from><to>5</to><read>E</read></transition>
+		<transition><from>5</from><to>5</to><read>O</read></transition>
+		<transition><from>5</from><to>5</to><read>L</read></transition>
+		<transition><from>5</from><to>6</to><read>R</read></transition>
+		<transition><from>5</from><to>7</to><read>A</read></transition>
+		<transition><from>6</from><to>6</to><read>R</read></transition>
+		<transition><from>6</from><to>6</to><read>C</read></transition>
+		<transition><from>6</from><to>6</to><read>I</read></transition>
+		<transition><from>6</from><to>6</to><read>A</read></transition>
+		<transition><from>6</from><to>6</to><read>E</read></transition>
+		<transition><from>6</from><to>6</to><read>O</read></transition>
+		<transition><from>6</from><to>6</to><read>L</read></transition>
+		<transition><from>7</from><to>7</to><read>R</read></transition>
+		<transition><from>7</from><to>7</to><read>C</read></transition>
+		<transition><from>7</from><to>7</to><read>I</read></transition>
+		<transition><from>7</from><to>7</to><read>A</read></transition>
+		<transition><from>7</from><to>7</to><read>E</read></transition>
+		<transition><from>7</from><to>7</to><read>O</read></transition>
+		<transition><from>7</from><to>7</to><read>L</read></transition>
+
+		<!-- Transiciones Rama P3 -->
+		<transition><from>8</from><to>8</to><read>R</read></transition>
+		<transition><from>8</from><to>8</to><read>C</read></transition>
+		<transition><from>8</from><to>8</to><read>I</read></transition>
+		<transition><from>8</from><to>8</to><read>A</read></transition>
+		<transition><from>8</from><to>8</to><read>E</read></transition>
+		<transition><from>8</from><to>8</to><read>O</read></transition>
+		<transition><from>8</from><to>8</to><read>L</read></transition>
+		<transition><from>8</from><to>9</to><read>O</read></transition>
+		<transition><from>9</from><to>10</to><read>E</read></transition>
+		<transition><from>10</from><to>10</to><read>R</read></transition>
+		<transition><from>10</from><to>10</to><read>C</read></transition>
+		<transition><from>10</from><to>10</to><read>I</read></transition>
+		<transition><from>10</from><to>10</to><read>A</read></transition>
+		<transition><from>10</from><to>10</to><read>E</read></transition>
+		<transition><from>10</from><to>10</to><read>O</read></transition>
+		<transition><from>10</from><to>10</to><read>L</read></transition>
+	</automaton>
+</structure>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Creado para JFLAP 7.1 - AFD Mínimo Resultante -->
+<structure>
+	<type>fa</type>
+	<automaton>
+		<!-- Estados del AFD Mínimo -->
+		<state id="0" name="qm0">
+			<x>100.0</x>
+			<y>250.0</y>
+			<initial/>
+		</state>
+		<state id="1" name="qm1">
+			<x>260.0</x>
+			<y>150.0</y>
+		</state>
+		<state id="2" name="qm2">
+			<x>260.0</x>
+			<y>350.0</y>
+		</state>
+		<state id="3" name="qm3">
+			<x>420.0</x>
+			<y>350.0</y>
+		</state>
+		<state id="4" name="qm4">
+			<x>420.0</x>
+			<y>250.0</y>
+		</state>
+		<state id="5" name="qm5">
+			<x>260.0</x>
+			<y>50.0</y>
+		</state>
+		<state id="6" name="qm6">
+			<x>420.0</x>
+			<y>50.0</y>
+		</state>
+		<state id="7" name="qm7">
+			<x>600.0</x>
+			<y>250.0</y>
+			<final/>
+		</state>
+
+		<!-- Transiciones desde qm0 -->
+		<transition><from>0</from><to>1</to><read>R</read></transition>
+		<transition><from>0</from><to>0</to><read>C</read></transition>
+		<transition><from>0</from><to>2</to><read>I</read></transition>
+		<transition><from>0</from><to>7</to><read>A</read></transition>
+		<transition><from>0</from><to>0</to><read>E</read></transition>
+		<transition><from>0</from><to>4</to><read>O</read></transition>
+		<transition><from>0</from><to>0</to><read>L</read></transition>
+
+		<!-- Transiciones desde qm1 -->
+		<transition><from>1</from><to>1</to><read>R</read></transition>
+		<transition><from>1</from><to>1</to><read>C</read></transition>
+		<transition><from>1</from><to>5</to><read>I</read></transition>
+		<transition><from>1</from><to>1</to><read>A</read></transition>
+		<transition><from>1</from><to>1</to><read>E</read></transition>
+		<transition><from>1</from><to>4</to><read>O</read></transition>
+		<transition><from>1</from><to>1</to><read>L</read></transition>
+
+		<!-- Transiciones desde qm2 -->
+		<transition><from>2</from><to>1</to><read>R</read></transition>
+		<transition><from>2</from><to>0</to><read>C</read></transition>
+		<transition><from>2</from><to>3</to><read>I</read></transition>
+		<transition><from>2</from><to>7</to><read>A</read></transition>
+		<transition><from>2</from><to>0</to><read>E</read></transition>
+		<transition><from>2</from><to>4</to><read>O</read></transition>
+		<transition><from>2</from><to>2</to><read>L</read></transition>
+
+		<!-- Transiciones desde qm3 -->
+		<transition><from>3</from><to>1</to><read>R</read></transition>
+		<transition><from>3</from><to>0</to><read>C</read></transition>
+		<transition><from>3</from><to>7</to><read>I</read></transition>
+		<transition><from>3</from><to>7</to><read>A</read></transition>
+		<transition><from>3</from><to>0</to><read>E</read></transition>
+		<transition><from>3</from><to>4</to><read>O</read></transition>
+		<transition><from>3</from><to>3</to><read>L</read></transition>
+
+		<!-- Transiciones desde qm4 -->
+		<transition><from>4</from><to>1</to><read>R</read></transition>
+		<transition><from>4</from><to>0</to><read>C</read></transition>
+		<transition><from>4</from><to>2</to><read>I</read></transition>
+		<transition><from>4</from><to>7</to><read>A</read></transition>
+		<transition><from>4</from><to>7</to><read>E</read></transition>
+		<transition><from>4</from><to>4</to><read>O</read></transition>
+		<transition><from>4</from><to>4</to><read>L</read></transition>
+
+		<!-- Transiciones desde qm5 -->
+		<transition><from>5</from><to>1</to><read>R</read></transition>
+		<transition><from>5</from><to>1</to><read>C</read></transition>
+		<transition><from>5</from><to>6</to><read>I</read></transition>
+		<transition><from>5</from><to>1</to><read>A</read></transition>
+		<transition><from>5</from><to>1</to><read>E</read></transition>
+		<transition><from>5</from><to>4</to><read>O</read></transition>
+		<transition><from>5</from><to>5</to><read>L</read></transition>
+
+		<!-- Transiciones desde qm6 -->
+		<transition><from>6</from><to>1</to><read>R</read></transition>
+		<transition><from>6</from><to>1</to><read>C</read></transition>
+		<transition><from>6</from><to>7</to><read>I</read></transition>
+		<transition><from>6</from><to>1</to><read>A</read></transition>
+		<transition><from>6</from><to>1</to><read>E</read></transition>
+		<transition><from>6</from><to>4</to><read>O</read></transition>
+		<transition><from>6</from><to>6</to><read>L</read></transition>
+
+		<!-- Transiciones Bucle Trampa en qm7 (Aceptación) -->
+		<transition><from>7</from><to>7</to><read>R</read></transition>
+		<transition><from>7</from><to>7</to><read>C</read></transition>
+		<transition><from>7</from><to>7</to><read>I</read></transition>
+		<transition><from>7</from><to>7</to><read>A</read></transition>
+		<transition><from>7</from><to>7</to><read>E</read></transition>
+		<transition><from>7</from><to>7</to><read>O</read></transition>
+		<transition><from>7</from><to>7</to><read>L</read></transition>
+	</automaton>
+</structure>
