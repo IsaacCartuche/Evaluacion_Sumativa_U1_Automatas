@@ -1,5 +1,6 @@
 import csv
 import time
+from collections import defaultdict
 from automata import AFND, afnd_a_afd, minimizar_afd
 
 def construir_afnd_monitor():
